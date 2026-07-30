@@ -106,34 +106,5 @@
 <footer>
     <p>Site criado por <a href="https://github.com/nicollasxavier" target="_blank">Nicollas Xavier</a></p>
 </footer>
-
-<script>
-
-const sections = document.querySelectorAll(".imagem");
-
-function parallax(){
-
-    sections.forEach(section => {
-
-        const velocidade = 0.35;
-
-        const posicao = window.pageYOffset;
-
-        const topo = section.offsetTop;
-
-        const deslocamento = (posicao - topo) * velocidade;
-
-        section.style.backgroundPosition =
-            `center ${deslocamento}px`;
-
-    });
-
-}
-
-window.addEventListener("scroll", parallax);
-
-parallax();
-
-</script>
 </body>
 </html>
