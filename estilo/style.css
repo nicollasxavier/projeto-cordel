@@ -68,11 +68,21 @@ section.normal {
 }
 
 section.imagem {
+    position: relative;
+
     background-color: rgb(81, 81, 81);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Remove o parallax antigo */
+    background-attachment: scroll;
+
+    box-shadow: inset 6px 6px 13px rgba(0,0,0,.47);
+
+    overflow: hidden;
 }
 
 section.imagem > p {
@@ -84,7 +94,7 @@ section.imagem > p {
 
 section#img01 {
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
+   
 }
 
 section#img02 {
