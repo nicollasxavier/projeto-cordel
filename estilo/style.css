@@ -80,6 +80,7 @@ section.imagem > p {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
+    border-radius: 7px;
 }
 
 section#img01 {
